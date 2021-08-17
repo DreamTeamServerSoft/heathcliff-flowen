@@ -1,0 +1,15 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "Healthcliff Flowen allows our users to add or remove server roles, provides sign up roles for server events and giveaways, and even engages in snarky conversations with server members!",
+  "main": "main.js",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shawn Luther",
+  "license": "ISC"
+}
