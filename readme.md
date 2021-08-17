@@ -1,4 +1,4 @@
-# Server Announcer (Gae Bolg)
+# Server Role Assigner
 
 ### Introduction
 Healthcliff Flowen allows our users to add or remove server roles, provides sign up roles for server events and giveaways, and even engages in snarky conversations with server members!
