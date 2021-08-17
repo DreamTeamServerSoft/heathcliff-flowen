@@ -5,6 +5,7 @@ const cli = new Discord.Client();
 
 // All Server Role (IDs).
 const dcv1 = "700385883395981413"; // PSO Dreamcast Version 1.
+const dcv2 = "700390319027650610"; // PSO Dreamcast Version 2.
 
 // When the client is running, log it in the console.
 cli.once("ready", () => {
@@ -60,8 +61,19 @@ cli.on("message", function (message) {
     }
 });
 
+// '!role dcv2' Command.
+cli.on("message", function (message) {
+    if (message.content == "!role dcv2") {
+        message.member.roles.add(dcv2);
+        message.channel.send("You are now assigned to 'PSO Dreamcast Version 2!'");
+    } else if (message.content == "!remove dcv2") {
+        message.member.roles.remove(dcv2);
+        message.channel.send("You have successfully removed 'PSO Dreamcast Version 2' from your Discord account.");
+    }
+});
+
 
 
 
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.WJzTlf23rtISMvsP3j873RoZ0xE"); // If you are seeing this on Github, this token has expired.np
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.OXVynfhOnz4MJagSislU4FNVXMU"); // If you are seeing this on Github, this token has expired.np
