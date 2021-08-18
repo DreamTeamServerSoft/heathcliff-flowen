@@ -6,6 +6,10 @@ const cli = new Discord.Client();
 // All Server Role (IDs).
 const dcv1 = "700385883395981413"; // PSO Dreamcast Version 1.
 const dcv2 = "700390319027650610"; // PSO Dreamcast Version 2.
+const psogc = "700390658460090389"; // PSO GameCube.
+const psopc = "700386019345956865"; // PSO PC.
+const psobb = "713743313701961749"; // PSO BB.
+const psox = "713744416367444058"; // PSOX.
 
 // When the client is running, log it in the console.
 cli.once("ready", () => {
@@ -72,8 +76,50 @@ cli.on("message", function (message) {
     }
 });
 
+// '!role psogc' Command.
+cli.on("message", function (message) {
+    if (message.content == "!role psogc") {
+        message.member.roles.add(psogc);
+        message.channel.send("You are now assigned to 'PSO GameCube!'");
+    } else if (message.content == "!remove psogc") {
+        message.member.roles.remove(psogc);
+        message.channel.send("You have successfully removed 'PSO GameCube' from your Discord account.");
+    }
+});
 
+// '!role psopc' Command.
+cli.on("message", function (message) {
+    if (message.content == "!role psopc") {
+        message.member.roles.add(psopc);
+        message.channel.send("You are now assigned to 'PSO PC!'");
+    } else if (message.content == "!remove psopc") {
+        message.member.roles.remove(psopc);
+        message.channel.send("You have successfully removed 'PSO PC' from your Discord account.");
+    }
+});
+
+// '!role psobb' Command.
+cli.on("message", function (message) {
+    if (message.content == "!role psobb") {
+        message.member.roles.add(psobb);
+        message.channel.send("You are now assigned to 'PSO Blue Burst!'");
+    } else if (message.content == "!remove psobb") {
+        message.member.roles.remove(psobb);
+        message.channel.send("You have successfully removed 'PSO Blue Burst' from your Discord account.");
+    }
+});
+
+// '!role psox' Command.
+cli.on("message", function (message) {
+    if (message.content == "!role psox") {
+        message.member.roles.add(psox);
+        message.channel.send("You are now assigned to 'PSO Xbox!'");
+    } else if (message.content == "!remove psox") {
+        message.member.roles.remove(psox);
+        message.channel.send("You have successfully removed 'PSO Xbox' from your Discord account.");
+    }
+});
 
 
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.OXVynfhOnz4MJagSislU4FNVXMU"); // If you are seeing this on Github, this token has expired.np
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.WKcvacXstfnU9Xqh-XiNts5pIlw"); // If you are seeing this on Github, this token has expired.
