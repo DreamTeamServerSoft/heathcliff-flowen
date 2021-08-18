@@ -16,6 +16,8 @@ const pso2 = "716064125188309024"; // PSO2.
 const quake3 = "754023346097750068"; // Quake III Arena.
 const alienfront = "799084854008086559"; // Alien From Online.
 const wormparty = "799085233554325545"; // Worms World Party.
+const gundam = "754023883056742472"; // Mobile Suit Gundam.
+const gamepack = "850990240817872927"; // Internet Game Pack.
 
 // Other Misc DreamTeam Role (IDs).
 const pingme = "770733104775036929" // Subscribe to 'Announcements'.
@@ -184,7 +186,27 @@ cli.on("message", function (message) {
     }
 });
 
+// '!role gundam' Command.
+cli.on("message", function (message) {
+    if (message.content == "!role gundam") {
+        message.member.roles.add(gundam);
+        message.channel.send("You are now assigned to 'Mobile Suit Gundam!'");
+    } else if (message.content == "!remove gundam") {
+        message.member.roles.remove(gundam);
+        message.channel.send("You have successfully removed 'Mobile Suit Gundam' from your Discord account.");
+    }
+});
 
+// '!role gamepack' Command.
+cli.on("message", function (message) {
+    if (message.content == "!role gamepack") {
+        message.member.roles.add(gamepack);
+        message.channel.send("You are now assigned to 'Internet Game Pack!'");
+    } else if (message.content == "!remove gamepack") {
+        message.member.roles.remove(gamepack);
+        message.channel.send("You have successfully removed 'Internet Game Pack' from your Discord account.");
+    }
+});
 
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.2x7yQKz_b041V-aB_xDl8PEsSrU"); // If you are seeing this on Github, this token has expired.
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.MnvGC34r009qOvdAA7_3PZ5eGdE"); // If you are seeing this on Github, this token has expired.
