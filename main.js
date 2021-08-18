@@ -12,6 +12,11 @@ const psobb = "713743313701961749"; // PSO BB.
 const psox = "713744416367444058"; // PSOX.
 const pso2 = "716064125188309024"; // PSO2.
 
+// Other Game Role (IDs).
+const quake3 = "754023346097750068"; // Quake III Arena.
+const alienfront = "799084854008086559"; // Alien From Online.
+const wormparty = "799085233554325545"; // Worms World Party.
+
 // Other Misc DreamTeam Role (IDs).
 const pingme = "770733104775036929" // Subscribe to 'Announcements'.
 
@@ -146,6 +151,40 @@ cli.on("message", function (message) {
     }
 });
 
+// '!role quake3' Command.
+cli.on("message", function (message) {
+    if (message.content == "!role quake3") {
+        message.member.roles.add(quake3);
+        message.channel.send("You are now assigned to 'Quake III Arena!'");
+    } else if (message.content == "!remove quake3") {
+        message.member.roles.remove(quake3);
+        message.channel.send("You have successfully removed 'Quake III Arena' from your Discord account.");
+    }
+});
+
+// '!role alienfront' Command.
+cli.on("message", function (message) {
+    if (message.content == "!role alienfront") {
+        message.member.roles.add(alienfront);
+        message.channel.send("You are now assigned to 'Alien Front Online!'");
+    } else if (message.content == "!remove alienfront") {
+        message.member.roles.remove(alienfront);
+        message.channel.send("You have successfully removed 'Alien Front Online' from your Discord account.");
+    }
+});
+
+// '!role wormparty' Command.
+cli.on("message", function (message) {
+    if (message.content == "!role wormparty") {
+        message.member.roles.add(wormparty);
+        message.channel.send("You are now assigned to 'Worms World Party!'");
+    } else if (message.content == "!remove wormparty") {
+        message.member.roles.remove(wormparty);
+        message.channel.send("You have successfully removed 'Worms World Party' from your Discord account.");
+    }
+});
+
+
 
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.tfqJQaf7Xcsawuy8iG6dv6DxSHE"); // If you are seeing this on Github, this token has expired.
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.2x7yQKz_b041V-aB_xDl8PEsSrU"); // If you are seeing this on Github, this token has expired.
