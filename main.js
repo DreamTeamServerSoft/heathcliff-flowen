@@ -1,6 +1,5 @@
 // Discord App Dependencies.
-const { Message } = require("discord.js");
-const Discord = require("Discord.js");
+const Discord = require("discord.js");
 const cli = new Discord.Client();
 
 // All PSO Game Role (IDs).
@@ -120,17 +119,6 @@ cli.on("message", function (message) {
     }
 });
 
-// '!role psobb' Command.
-cli.on("message", function (message) {
-    if (message.content == "!role psobb") {
-        message.member.roles.add(psobb);
-        message.channel.send("You are now assigned to 'PSO Blue Burst!'");
-    } else if (message.content == "!remove psobb") {
-        message.member.roles.remove(psobb);
-        message.channel.send("You have successfully removed 'PSO Blue Burst' from your Discord account.");
-    }
-});
-
 // '!role psox' Command.
 cli.on("message", function (message) {
     if (message.content == "!role psox") {
@@ -139,17 +127,6 @@ cli.on("message", function (message) {
     } else if (message.content == "!remove psox") {
         message.member.roles.remove(psox);
         message.channel.send("You have successfully removed 'PSO Xbox' from your Discord account.");
-    }
-});
-
-// '!role pso2' Command.
-cli.on("message", function (message) {
-    if (message.content == "!role pso2") {
-        message.member.roles.add(pso2);
-        message.channel.send("You are now assigned to 'PSO 2!'");
-    } else if (message.content == "!remove pso2") {
-        message.member.roles.remove(pso2);
-        message.channel.send("You have successfully removed 'PSO 2' from your Discord account.");
     }
 });
 
@@ -164,49 +141,5 @@ cli.on("message", function (message) {
     }
 });
 
-// '!role alienfront' Command.
-cli.on("message", function (message) {
-    if (message.content == "!role alienfront") {
-        message.member.roles.add(alienfront);
-        message.channel.send("You are now assigned to 'Alien Front Online!'");
-    } else if (message.content == "!remove alienfront") {
-        message.member.roles.remove(alienfront);
-        message.channel.send("You have successfully removed 'Alien Front Online' from your Discord account.");
-    }
-});
-
-// '!role wormparty' Command.
-cli.on("message", function (message) {
-    if (message.content == "!role wormparty") {
-        message.member.roles.add(wormparty);
-        message.channel.send("You are now assigned to 'Worms World Party!'");
-    } else if (message.content == "!remove wormparty") {
-        message.member.roles.remove(wormparty);
-        message.channel.send("You have successfully removed 'Worms World Party' from your Discord account.");
-    }
-});
-
-// '!role gundam' Command.
-cli.on("message", function (message) {
-    if (message.content == "!role gundam") {
-        message.member.roles.add(gundam);
-        message.channel.send("You are now assigned to 'Mobile Suit Gundam!'");
-    } else if (message.content == "!remove gundam") {
-        message.member.roles.remove(gundam);
-        message.channel.send("You have successfully removed 'Mobile Suit Gundam' from your Discord account.");
-    }
-});
-
-// '!role gamepack' Command.
-cli.on("message", function (message) {
-    if (message.content == "!role gamepack") {
-        message.member.roles.add(gamepack);
-        message.channel.send("You are now assigned to 'Internet Game Pack!'");
-    } else if (message.content == "!remove gamepack") {
-        message.member.roles.remove(gamepack);
-        message.channel.send("You have successfully removed 'Internet Game Pack' from your Discord account.");
-    }
-});
-
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.MnvGC34r009qOvdAA7_3PZ5eGdE"); // If you are seeing this on Github, this token has expired.
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.9h7G94Q_2-mHAd4Pm4gKPE9C6Dc"); // If you are seeing this on Github, this token has expired.
