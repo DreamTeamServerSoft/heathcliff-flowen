@@ -7,16 +7,10 @@ const dcv1 = "700385883395981413"; // PSO Dreamcast Version 1.
 const dcv2 = "700390319027650610"; // PSO Dreamcast Version 2.
 const psogc = "700390658460090389"; // PSO GameCube.
 const psopc = "700386019345956865"; // PSO PC.
-const psobb = "713743313701961749"; // PSO BB.
-const psox = "713744416367444058"; // PSOX.
-const pso2 = "716064125188309024"; // PSO2.
 
 // Other Game Role (IDs).
 const quake3 = "754023346097750068"; // Quake III Arena.
-const alienfront = "799084854008086559"; // Alien From Online.
-const wormparty = "799085233554325545"; // Worms World Party.
-const gundam = "754023883056742472"; // Mobile Suit Gundam.
-const gamepack = "850990240817872927"; // Internet Game Pack.
+const Halo = "902041200159240272"; // Halo
 
 // Other Misc DreamTeam Role (IDs).
 const pingme = "770733104775036929" // Subscribe to 'Announcements'.
@@ -52,8 +46,13 @@ cli.on("message", function (message) {
         const answers = [
             "Yes.",
             "No.",
+            "Sure",
             "Maybe.",
-            "I'm busy right now, ask me later."
+            "Definitely.",
+            "Absolutely not.",
+            "I'm busy right now, ask me later.",
+            "I don't get paid enough to answer that question.",
+            "Hey man, I'm trying to finish this poptart, can a guy have a moment?"
         ];
 
         // Based On the Above Strings, randomly loop through all possibilities.
@@ -141,5 +140,16 @@ cli.on("message", function (message) {
     }
 });
 
+// '!role halo' Command.
+cli.on("message", function (message) {
+    if (message.content == "!role halo") {
+        message.member.roles.add(Halo);
+        message.channel.send("You are now assigned to 'Halo!'");
+    } else if (message.content == "!remove halo") {
+        message.member.roles.remove(Halo);
+        message.channel.send("You have successfully removed 'Halo' from your Discord account.");
+    }
+});
+
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.9h7G94Q_2-mHAd4Pm4gKPE9C6Dc"); // If you are seeing this on Github, this token has expired.
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.PVph3UOIYXqgJGqVeWTHpe5n8eI"); // If you are seeing this on Github, this token has expired.
