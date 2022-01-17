@@ -118,17 +118,6 @@ cli.on("message", function (message) {
     }
 });
 
-// '!role psox' Command.
-cli.on("message", function (message) {
-    if (message.content == "!role psox") {
-        message.member.roles.add(psox);
-        message.channel.send("You are now assigned to 'PSO Xbox!'");
-    } else if (message.content == "!remove psox") {
-        message.member.roles.remove(psox);
-        message.channel.send("You have successfully removed 'PSO Xbox' from your Discord account.");
-    }
-});
-
 // '!role quake3' Command.
 cli.on("message", function (message) {
     if (message.content == "!role quake3") {
@@ -152,4 +141,4 @@ cli.on("message", function (message) {
 });
 
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.PVph3UOIYXqgJGqVeWTHpe5n8eI"); // If you are seeing this on Github, this token has expired.
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.Am1rojhcIW0wQQpTQoktGC9llhk"); // If you are seeing this on Github, this token has expired.
