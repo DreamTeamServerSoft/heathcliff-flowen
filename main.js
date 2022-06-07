@@ -6,11 +6,19 @@ const cli = new Discord.Client();
 const dcv1 = "700385883395981413"; // PSO Dreamcast Version 1.
 const dcv2 = "700390319027650610"; // PSO Dreamcast Version 2.
 const psogc = "700390658460090389"; // PSO GameCube.
-const psopc = "700386019345956865"; // PSO PC.
+const psopc = "955130493077180507"; // PSO PC.
 
 // Other Game Role (IDs).
 const quake3 = "754023346097750068"; // Quake III Arena.
 const Halo = "902041200159240272"; // Halo
+
+// Server Color Customization (IDs).
+const orange = "983707491688927232";
+const blue = "983707652594991104";
+const yellow = "983707779971833856";
+const green = "983707839891636245";
+const purple = "983707905855475762";
+const brown = "983708005885423626";
 
 // Other Misc DreamTeam Role (IDs).
 const pingme = "770733104775036929"; // Subscribe to 'Announcements'.
@@ -195,5 +203,83 @@ cli.on("message", function (message) {
   }
 });
 
+// '!uname orange' Command.
+cli.on("message", function (message) {
+  if (message.content == "!uname orange") {
+    message.member.roles.add(orange);
+    message.channel.send("Bam! Your nickname will now show up 'Dreamcast Orange (US)'!");
+  } else if (message.content == "!remove orange") {
+    message.member.roles.remove(orange);
+    message.channel.send(
+      "The nickname color 'Dreamcast Orange (US)' has been removed. You will now appear in chat with the default color scheme."
+    );
+  }
+});
+
+// '!uname blue' Command.
+cli.on("message", function (message) {
+  if (message.content == "!uname blue") {
+    message.member.roles.add(blue);
+    message.channel.send("Bam! Your nickname will now show up 'Dreamcast Blue (Europe)'!");
+  } else if (message.content == "!remove blue") {
+    message.member.roles.remove(blue);
+    message.channel.send(
+      "The nickname color 'Dreamcast Blue (Europe)' has been removed. You will now appear in chat with the default color scheme."
+    );
+  }
+});
+
+// '!uname yellow' Command.
+cli.on("message", function (message) {
+  if (message.content == "!uname yellow") {
+    message.member.roles.add(yellow);
+    message.channel.send("Bam! Your nickname will now show up 'Rappy Yellow'!");
+  } else if (message.content == "!remove yellow") {
+    message.member.roles.remove(yellow);
+    message.channel.send(
+      "The nickname color 'Rappy Yellow' has been removed. You will now appear in chat with the default color scheme."
+    );
+  }
+});
+
+// '!uname green' Command.
+cli.on("message", function (message) {
+  if (message.content == "!uname green") {
+    message.member.roles.add(green);
+    message.channel.send("Bam! Your nickname will now show up 'Chief Green'!");
+  } else if (message.content == "!remove green") {
+    message.member.roles.remove(green);
+    message.channel.send(
+      "The nickname color 'Chief Green' has been removed. You will now appear in chat with the default color scheme."
+    );
+  }
+});
+
+// '!uname purple' Command.
+cli.on("message", function (message) {
+  if (message.content == "!uname purple") {
+    message.member.roles.add(purple);
+    message.channel.send("Bam! Your nickname will now show up 'Ruins Purple'!");
+  } else if (message.content == "!remove purple") {
+    message.member.roles.remove(purple);
+    message.channel.send(
+      "The nickname color 'Ruins Purple' has been removed. You will now appear in chat with the default color scheme."
+    );
+  }
+});
+
+// '!uname brown' Command.
+cli.on("message", function (message) {
+  if (message.content == "!uname brown") {
+    message.member.roles.add(brown);
+    message.channel.send("Bam! Your nickname will now show up 'Doo-Doo Brown'!");
+  } else if (message.content == "!remove brown") {
+    message.member.roles.remove(brown);
+    message.channel.send(
+      "The nickname color 'Doo-Doo Brown' has been removed. You will now appear in chat with the default color scheme."
+    );
+  }
+});
+
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.VolZ6wc5O4odk7BZPsdbRln3VF8"); // If you are seeing this on Github, this token has expired.
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.FjM6bkivMGfm3RhhXorUR6GlqQ0"); // If you are seeing this on Github, this token has expired.
