@@ -282,4 +282,4 @@ cli.on("message", function (message) {
 });
 
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.XskQMg.FjM6bkivMGfm3RhhXorUR6GlqQ0"); // If you are seeing this on Github, this token has expired.
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.GG_Ga8.X7xe7B4oSdJ5XSxV0nLAUWOrGWqSQwkjRJWD9U"); // If you are seeing this on Github, this token has expired.
