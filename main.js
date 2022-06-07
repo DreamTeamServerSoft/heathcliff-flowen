@@ -19,6 +19,7 @@ const yellow = "983707779971833856";
 const green = "983707839891636245";
 const purple = "983707905855475762";
 const brown = "983708005885423626";
+const cyan = "983846795077648455";
 
 // Other Misc DreamTeam Role (IDs).
 const pingme = "770733104775036929"; // Subscribe to 'Announcements'.
@@ -281,5 +282,18 @@ cli.on("message", function (message) {
   }
 });
 
+// '!uname cyan' Command.
+cli.on("message", function (message) {
+  if (message.content == "!uname cyan") {
+    message.member.roles.add(cyan);
+    message.channel.send("Bam! Your nickname will now show up 'Uranus Green'!");
+  } else if (message.content == "!remove cyan") {
+    message.member.roles.remove(cyan);
+    message.channel.send(
+      "The nickname color 'Uranus Green' has been removed."
+    );
+  }
+});
+
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.Gt3MCG.1Yo6ExjDU40MkswNKJo8HKZ-wBTcKKaDdRr5b4"); // If you are seeing this on Github, this token has expired.
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.Gc40UB.YOotegrwTh7IfAFMeW0vVcjiA5TaKNCH84X8QU"); // If you are seeing this on Github, this token has expired.
