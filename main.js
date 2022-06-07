@@ -211,7 +211,7 @@ cli.on("message", function (message) {
   } else if (message.content == "!remove orange") {
     message.member.roles.remove(orange);
     message.channel.send(
-      "The nickname color 'Dreamcast Orange (US)' has been removed. You will now appear in chat with the default color scheme."
+      "The nickname color 'Dreamcast Orange (US)' has been removed."
     );
   }
 });
@@ -224,7 +224,7 @@ cli.on("message", function (message) {
   } else if (message.content == "!remove blue") {
     message.member.roles.remove(blue);
     message.channel.send(
-      "The nickname color 'Dreamcast Blue (Europe)' has been removed. You will now appear in chat with the default color scheme."
+      "The nickname color 'Dreamcast Blue (Europe)' has been removed."
     );
   }
 });
@@ -237,7 +237,7 @@ cli.on("message", function (message) {
   } else if (message.content == "!remove yellow") {
     message.member.roles.remove(yellow);
     message.channel.send(
-      "The nickname color 'Rappy Yellow' has been removed. You will now appear in chat with the default color scheme."
+      "The nickname color 'Rappy Yellow' has been removed."
     );
   }
 });
@@ -250,7 +250,7 @@ cli.on("message", function (message) {
   } else if (message.content == "!remove green") {
     message.member.roles.remove(green);
     message.channel.send(
-      "The nickname color 'Chief Green' has been removed. You will now appear in chat with the default color scheme."
+      "The nickname color 'Chief Green' has been removed."
     );
   }
 });
@@ -263,7 +263,7 @@ cli.on("message", function (message) {
   } else if (message.content == "!remove purple") {
     message.member.roles.remove(purple);
     message.channel.send(
-      "The nickname color 'Ruins Purple' has been removed. You will now appear in chat with the default color scheme."
+      "The nickname color 'Ruins Purple' has been removed."
     );
   }
 });
@@ -276,10 +276,10 @@ cli.on("message", function (message) {
   } else if (message.content == "!remove brown") {
     message.member.roles.remove(brown);
     message.channel.send(
-      "The nickname color 'Doo-Doo Brown' has been removed. You will now appear in chat with the default color scheme."
+      "The nickname color 'Doo-Doo Brown' has been removed."
     );
   }
 });
 
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.GG_Ga8.X7xe7B4oSdJ5XSxV0nLAUWOrGWqSQwkjRJWD9U"); // If you are seeing this on Github, this token has expired.
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.Gt3MCG.1Yo6ExjDU40MkswNKJo8HKZ-wBTcKKaDdRr5b4"); // If you are seeing this on Github, this token has expired.
