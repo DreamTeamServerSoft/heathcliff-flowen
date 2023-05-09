@@ -15,7 +15,7 @@ const Halo = "902041200159240272"; // Halo
 
 // Server Color Customization (IDs).
 const orange = "1105279341354565653";
-const blue = "1105279341354565652";
+const blue = "983707652594991104";
 const yellow = "983707779971833856";
 const green = "983707839891636245";
 const purple = "983707905855475762";
@@ -441,4 +441,4 @@ cli.on("message", function (message) {
   
 
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.GucdLB.A0zvIocuVWEahNCdJ2x3rtiPAeLakenuf9H_iA"); // If you are seeing this on Github, this token has expired.
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.GTZtVn.Pqjkg3I_OgbMXbotxdW5_eDHy095SXfB0S2h8o"); // If you are seeing this on Github, this token has expired.
