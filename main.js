@@ -14,13 +14,15 @@ const quake3 = "754023346097750068"; // Quake III Arena.
 const Halo = "902041200159240272"; // Halo
 
 // Server Color Customization (IDs).
-const orange = "983707491688927232";
-const blue = "983707652594991104";
+const orange = "1105279341354565653";
+const blue = "1105279341354565652";
 const yellow = "983707779971833856";
 const green = "983707839891636245";
 const purple = "983707905855475762";
 const brown = "983708005885423626";
 const cyan = "983846795077648455";
+const red = "1001148655245459487";
+const pink = "1001149925372993566";
 
 // Other Misc DreamTeam Role (IDs).
 const pingme = "770733104775036929"; // Subscribe to 'Announcements'.
@@ -175,6 +177,19 @@ cli.on("message", function (message) {
     message.member.roles.remove(psopc);
     message.channel.send(
       "You have successfully removed 'PSO PC' from your Discord account."
+    );
+  }
+});
+
+// '!role psox' Command.
+cli.on("message", function (message) {
+  if (message.content == "!role psox") {
+    message.member.roles.add(psox);
+    message.channel.send("You are now assigned to 'PSO Xbox!'");
+  } else if (message.content == "!remove psox") {
+    message.member.roles.remove(psox);
+    message.channel.send(
+      "You have successfully removed 'PSO Xbox' from your Discord account."
     );
   }
 });
@@ -426,4 +441,4 @@ cli.on("message", function (message) {
   
 
 // Bot Login Token.
-cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.GVHxlo.jRL0yXB-bcNM3_B12XjWe0cR-u9gXCt4kOAwsw"); // If you are seeing this on Github, this token has expired.
+cli.login("NzEzNzIyODQ2NTQ2NzU1NjI0.GucdLB.A0zvIocuVWEahNCdJ2x3rtiPAeLakenuf9H_iA"); // If you are seeing this on Github, this token has expired.
